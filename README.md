@@ -67,7 +67,7 @@ This will do everything the previous docker command accomplished and enable you 
 Similar to running a development environment, we would run a production build with the production target stage
 
 ```
-docker build --no-cache -t my-production-python-environment:production --target production .
+docker build --no-cache -t my-python-production-environment:production --target production .
 ```
 
 Now, it is not going to be this easy for the production environment. When you work for the man (or woman), there are certain security measures or protocols that need to be followed. Hopefully it will be and easier process to port using this method.
@@ -90,7 +90,7 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - ~/my-python-environment/:/home/developer/
+      - ~/python--container-environment/:/home/developer/
 ```
 
 Now run, ```docker-compose up```
