@@ -26,7 +26,7 @@ The production layer should be as lean as possible and only hold the runtime of 
 
 Run the following command to build your development stage environment from the container.
 
-```
+``` bash
 docker build -t my-python-environment:development --target development .
 ```
 
@@ -34,7 +34,7 @@ This will build a docker image for you to use locally.
 
 Once the container has been built successfully, run the following command to work inside the container.
 
-```
+``` bash
 docker run -it \
   -v ~/python-container-environment/:/home/developer/ \ 
   -p 5000:5000 \
@@ -56,7 +56,7 @@ At this point, you should be in the container and able to run python scripts fro
 
 Run the following command:
 
-```
+``` bash
 docker-compose up
 ```
 
@@ -66,7 +66,7 @@ This will do everything the previous docker command accomplished and enable you 
 
 Similar to running a development environment, we would run a production build with the production target stage
 
-```
+``` bash
 docker build --no-cache -t my-python-production-environment:production --target production .
 ```
 
@@ -95,5 +95,6 @@ services:
 
 Now run, ```docker-compose up```
 
+---
 
-Hope you found this repo useful.
+Well that's all folks. I hope you found this repo useful.
