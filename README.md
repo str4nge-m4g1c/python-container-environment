@@ -1,1 +1,1 @@
-# local-python-environment
+# Python Container Environment for local development
