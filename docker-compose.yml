@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  development:
+    image: my-python-environment:development
+    command: jupyter-lab --allow-root --no-browser --ip=0.0.0.0
+    ports:
+      - "0.0.0.0:5000:5000"
+    stdin_open: true
+    tty: true
+    volumes:
+      - ~/python-container-environment/:/home/developer/
