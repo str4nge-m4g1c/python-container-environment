@@ -52,7 +52,7 @@ docker run -it \
 
 At this point, you should be in the container and able to run python scripts from your project folder in /home/developer/
 
-### Want to be more lazy, docker-compose
+### Copying and pasting the large command too hard, use docker-compose
 
 Run the following command:
 
