@@ -70,7 +70,7 @@ Similar to running a development environment, we would run a production build wi
 docker build --no-cache -t my-python-production-environment:production --target production .
 ```
 
-Now, it is not going to be this easy for the production environment. When you work for the man (or woman), there are certain security measures or protocols that need to be followed. Hopefully it will be and easier process to port using this method.
+Now, it is not going to be this easy for the production environment. When you work for an organisation, there are certain security measures or protocols that need to be followed. Hopefully it will be and easier process to port using this method.
 
 ## Bonus content - Your own jupyter environment
 
