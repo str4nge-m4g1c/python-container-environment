@@ -24,7 +24,7 @@ The production layer should be as lean as possible and only hold the runtime of 
 
 ## Building my development environment
 
-Run the following command to build your development stage environment from the container.
+Run the following command to build your development stage environment from the container. 
 
 ``` bash
 docker build -t my-python-environment:development --target development .
@@ -64,7 +64,7 @@ This will do everything the previous docker command accomplished and enable you 
 
 # Building my production environment
 
-Similar to running a development environment, we would run a production build with the production target stage
+Similar to running a development environment, we would run a production build with the production target stage. I used the docker tag as production for this example, please use semantic versioning for your own production containers.
 
 ``` bash
 docker build --no-cache -t my-python-production-environment:production --target production .
